@@ -7,8 +7,8 @@ pipeline {
     }
 
     environment {
-        AWS_ACCESS_KEY_ID     = credentials('aws-access-key-id')
-        AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key')
+        // AWS_ACCESS_KEY_ID     = credentials('aws-access-key-id')
+        // AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key')
         AWS_DEFAULT_REGION    = 'ap-south-1'
     }
 
@@ -18,9 +18,10 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/kiran-113/aws-tf-jenkins.git'
             }
         }
+
         stage('Terraform init') {
             steps {
-                sh 'terraform init'
+                sh ("terraform init -reconfigure")
             }
         }
         stage('Plan') {
