@@ -18,7 +18,7 @@ after initilizeing , cliek on build and select build with parameter
 
 3. install jenkins usging the schell script
 
-4. create s3 for remote backend
+4. create s3 bucket for remote backend
 
 5.----------------------------- create manual upto point 4
 

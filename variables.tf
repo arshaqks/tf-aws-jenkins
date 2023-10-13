@@ -13,7 +13,7 @@ variable "aws_secret_key" {
 variable "aws_region" {
   description = "AWS region"
   type        = string
-  default     = "ap-south-1"
+  default     = "us-east-1"
 }
 
 
@@ -32,5 +32,5 @@ variable "instance_type" {
 variable "name_tag" {
   type        = string
   description = "Name of the EC2 instance"
-  default     = "Jenkins-Instance"
+  default     = "jenkins_instance"
 }

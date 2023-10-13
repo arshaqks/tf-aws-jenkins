@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "devops_rtt" {
   count         = 1
-  bucket        = "devops-rtt-test-bucket-${count.index}"
+  bucket        = "arsh-us-east-1-bucket-2-${count.index}"
   force_destroy = true
 
   tags = {
