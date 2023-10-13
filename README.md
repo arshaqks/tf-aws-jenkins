@@ -18,13 +18,13 @@ after initilizeing , cliek on build and select build with parameter
 
 3. install jenkins usging the schell script
 
-4. s3 for remote backend
+4. create s3 for remote backend
 
-5.-----------------------------
+5.----------------------------- create manual upto point 4
 
 5. create new repo in your account -- clone the repo
 
-6. cerate a ec2 machine with security group , s3 bucket, with s3 backend --> creatre new s3 manual,
+6. cerate .tf files for  ec2 machine with security group , s3 bucket, with s3 backend --> creatre new s3 manual,
 
 and confire remote backend in terraform code
 
